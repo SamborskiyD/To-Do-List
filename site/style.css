@@ -19,7 +19,7 @@ body
     {
         box-sizing: border-box;
         background: silver;
-        padding: 10px;
+        padding: 10px 10px 6px 10px;
         float: right;
         width: 25%;
         text-align: center;
