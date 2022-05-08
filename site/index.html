@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>To Do List</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <div class="head">
+            <h1>To Do List</h1>
+            <input type="text" id="myInput">
+            <button onclick="addNewTask()" class="addBtn">
+            Click
+            </button>
+        </div>
 
-<body>
-    <div class="head">
-        <h1>My To Do List</h1>
-        <input type="text" id="myInput" placeholder="Enter...">
-        <span onclick="newElement()" class="add"> Add</span>
-    </div>
-    
-    <ul id="myList">
-        <li>Training</li>
-        <li>Do some housework</li>
-        <li>Learn English</li>
-        <li>Cook dinner</li>
-    </ul>
+        <ul id="myList">
+            <li>Clean</li>
+            <li>Study</li>
+            <li>Sport</li>
+        </ul>
 
-    <script> src='site\script.js'</script>
-</body>
+
+        <script src="script.js"></script>
+    </body>
 </html>
+
+
