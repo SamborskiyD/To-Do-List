@@ -19,6 +19,14 @@ function addNewTask() {
   closeBtn.className = "closeBtn";
   closeBtn.appendChild(text);
   elem.appendChild(closeBtn);
+
+  for (i = 0; i < closeBtns.length; i++)
+  {
+    closeBtns[i].onclick = function() {
+      var element = this.parentElement;
+      element.style.display = "none";
+    }
+  }
 }
 
 
@@ -32,4 +40,29 @@ for (i = 0; i < listOfElements.length; i++)
   closeBtn.className = "closeBtn";
   closeBtn.appendChild(text);
   listOfElements[i].appendChild(closeBtn);
+}
+
+
+
+function check(ev)
+{
+  if (ev.target.tagName === 'LI')
+  {
+    ev.target.classList.toggle('checked');
+  }
+}
+
+var ULlist = document.querySelector('ul');
+ULlist.addEventListener('click', check, false);
+
+
+
+var closeBtns = document.getElementsByClassName("closeBtn");
+var i;
+for (i = 0; i < closeBtns.length; i++)
+{
+  closeBtns[i].onclick = function() {
+    var element = this.parentElement;
+    element.style.display = "none";
+  }
 }

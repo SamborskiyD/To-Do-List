@@ -30,7 +30,8 @@ body
     }
 .addBtn:hover
     {
-        background-color: #f44336;
+    background-color: #f63022;
+    
         color: white;
     }
 .head
@@ -67,9 +68,11 @@ ul li:hover
 {
     background: rgb(200, 200, 200);
 }
-.checked
+ul li.checked
 {
-    background-color: darkslategray;
+    color: white;
+    background-color: #f44336;
+    opacity: .8;
     text-decoration: line-through;
 }
 
@@ -80,7 +83,7 @@ ul li:hover
     padding: 10px;
   }
   
-  .closeBtn:hover {
-    background-color: #f44336;
+.closeBtn:hover {
+    background-color: #f63022;
     color: white;
-  }
+}
